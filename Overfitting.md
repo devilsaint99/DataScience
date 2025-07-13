@@ -14,5 +14,13 @@
 
 If lambda is 0 then model is overfitting or else if it is large number then it will penalize all the features making f(x) = b, refer above images for intiution by replacing lambda with 0 and large value
 
-Because of new cost function, the formula of gradient decsent changes
+Because of new cost function, the formula of gradient descent changes
 <img width="789" height="360" alt="image" src="https://github.com/user-attachments/assets/2c13c7e9-6161-4759-95cd-08f97bf63347" />
+
+
+# How shrinkage of weights occur
+
+Basically if you carefully look at the new gardient descent update formula you will see that instead of w - alpha * dj/dw, now w is multiplied to value slightly smaller than 1.
+
+<img width="1274" height="372" alt="image" src="https://github.com/user-attachments/assets/512ca5dc-1c1c-4d76-b28e-4cd4ea7d9b9d" />
+
